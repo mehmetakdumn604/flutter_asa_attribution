@@ -57,7 +57,7 @@
 }
 
 + (void)requestAttributionWithToken:(NSString *)token complete:(void(^)(NSDictionary *data, NSError *error))complete {
-    NSString *url = [NSString stringWithFormat:@"https://api-adservices.apple.com/api/v1/"];
+    NSString *url = [NSString stringWithFormat:@"https://api-adservices.apple.com/api/v5/"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
     request.HTTPMethod = @"POST";
     [request addValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
